@@ -1,6 +1,6 @@
-require "chain/version"
+require "proc_chain/version"
 
-module Chain
+module ProcChain
   class Builder
     attr_reader :data
     def initialize(data = nil)

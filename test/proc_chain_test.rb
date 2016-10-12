@@ -1,13 +1,13 @@
 require 'test_helper'
 
 
-class ChainTest < Minitest::Test
+class ProcChainTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Chain::VERSION
+    refute_nil ::ProcChain::VERSION
   end
 
   def test_chain_with_default_value
-    result = Chain::Builder.new(0)
+    result = ProcChain::Builder.new(0)
       .next { |data| data + 1 }
       .next { |data| data + 1 }
       .data
@@ -15,7 +15,7 @@ class ChainTest < Minitest::Test
   end
 
   def test_chain_without_default_value
-    result = Chain::Builder.new
+    result = ProcChain::Builder.new
       .next { 1 }
       .next { |data| data + 1 }
       .data

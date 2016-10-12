@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'chain/version'
+require 'proc_chain/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "chain"
-  spec.version       = Chain::VERSION
+  spec.name          = "proc_chain"
+  spec.version       = ProcChain::VERSION
   spec.authors       = ["Sergey Staskov"]
   spec.email         = ["sergey.staskov@dellin.ru"]
 
   spec.summary       = %q{Simple gem to build chains without redundant variable naming.}
   spec.description   = %q{Simple gem to build chains without redundant variable naming.}
-  spec.homepage      = "https://github.com/solutus/chain"
+  spec.homepage      = "https://github.com/solutus/proc_chain"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|

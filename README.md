@@ -1,12 +1,12 @@
-# Chain
-  This simple gem is intended to build chains of methods without redundant variables naming.
+# Procproc_chain
+  This simple gem is intended to build proc_chains of methods without redundant variables naming.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'chain'
+gem 'proc_chain'
 ```
 
 And then execute:
@@ -15,14 +15,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install chain
+    $ gem install proc_chain
 
 ## Usage
 
 ### Without default value
 
 ```ruby
-  Chain::Builder.new
+  ProcChain::Builder.new
     .next { build_data }
     .next { |data| rebuild_data data }
     .data
@@ -31,7 +31,7 @@ Or install it yourself as:
 ### With default value
 
 ```ruby
-  Chain::Builder.new(data)
+  ProcChain::Builder.new(data)
     .next { |data| build_data  }
     .next { |data| rebuild_data data }
     .data
@@ -45,7 +45,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/solutus/chain. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/solutus/proc_chain. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
