@@ -1,4 +1,4 @@
-# Procproc_chain
+# ProcChain
   This simple gem is intended to build proc_chains of methods without redundant variables naming.
 
 ## Installation
